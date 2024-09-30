@@ -4,11 +4,12 @@ import {AppComponent} from "./app.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+
   ],
   exports: [],
   imports: [
-    DbzModule
+    DbzModule,
+    AppComponent
   ],
   providers: []
 })
