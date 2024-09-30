@@ -1,0 +1,22 @@
+<table class="table table-bordered border-black">
+  <thead>
+  <tr>
+    <th class="bg-primary-subtle">Name</th>
+    <th class="bg-primary-subtle">Killis</th>
+  </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let character of characters; let i = index">
+        <td class="bg-light fw-bold">
+          {{ character.name }}
+        </td>
+        <td class="bg-light d-flex justify-content-evenly align-items-center" >
+          {{character.killi}}
+          <button
+            class="btn btn-sm btn-danger rounded-1"
+            (click)="onDeleteCharacter(character.id!)"
+          >X</button>
+        </td>
+      </tr>
+  </tbody>
+</table>

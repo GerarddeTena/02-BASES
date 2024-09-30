@@ -1,0 +1,24 @@
+<form class="list-group" (ngSubmit)="addCharacter(character)">
+  <input
+    class="border-info border-1 list-group-item col bg-light"
+    type="text"
+    placeholder="Introduce character name"
+    [(ngModel)]="character.name"
+    required
+    name="name"
+  >
+  <input
+    class="border-info border-1 list-group-item col bg-light"
+    type="number"
+    placeholder="Introduce Killis"
+    [(ngModel)]="character.killi"
+    required
+    name="killi"
+  >
+  <div class="btn-group d-flex align-items-end">
+    <button
+      type="submit"
+      class="btn btn-sm btn-primary rounded-1"
+    >Add</button>
+  </div>
+</form>

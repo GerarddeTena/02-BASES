@@ -1,0 +1,9 @@
+<section class="container-fluid row mt-4">
+  <dbz-table class="col"
+             (deleteCharacter)="deleteCharacterById($event)"
+             [characters]="characters"
+  />
+  <dbz-form class="col"
+            (onAddCharacter)="onAddCharacter($event)"
+  />
+</section>
